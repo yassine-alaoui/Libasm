@@ -6,7 +6,7 @@
 #    By: yaalaoui <yaalaoui@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/16 14:25:42 by yaalaoui          #+#    #+#              #
-#    Updated: 2020/11/22 19:43:31 by yaalaoui         ###   ########.fr        #
+#    Updated: 2020/11/22 19:50:38 by yaalaoui         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ SRC = ft_strlen.s \
 		ft_read.s \
 		ft_strcmp.s \
 		ft_strdup.s \
-		ft_write.s	\
+		ft_write.s
 
 NAME = libasm.a
 

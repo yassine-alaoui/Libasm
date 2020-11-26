@@ -4,27 +4,27 @@ section     .text
             global _ft_strcmp
 
 _ft_strcmp:
-            mov		rax, -1								;int i = -1;
+            xor		r10, r10
+			xor		rcx, rcx
+			xor		rbx, rbx
 
 loop:
-			inc rax										;i++;
-			mov	cl, byte [rdi + rax]					;c == s1[i];
-			cmp	cl, byte [rsi + rax]					;if (c == s2[i]);
-			cmp	cl, 0									;if rdi[i] == '\0'
-			jz	loop									;equals ? loop again : don t;
-			sub cl, byte [rsi + rax]					;dif = s1[i] - s2[i];
-			je	equals									;if dif == 0 go to equals
-			jg	greater									;if dif > 0 go to greater
-			jl	lesser									;if dif > 0 go to lesser
+			mov cl, [rdi + r10]
+			mov bl, [rsi + r10]
+			cmp	cl, 0
+			je	return
+			cmp bl, 0
+			je	return
+			cmp	cl, bl
+			je	incer
+			jmp return
 
-greater:
-			mov rax,1									;return = 1;
-			ret
+incer:
+			inc r10
+			mov rax, 0
+			jmp	loop
 
-lesser:
-			mov rax,-1									;return = -1;
-			ret
-
-equals:
-			mov rax,0									;return = 0;
+return:
+			sub	rcx, rbx
+			mov rax, rcx
 			ret

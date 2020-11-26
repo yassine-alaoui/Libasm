@@ -6,7 +6,7 @@
 /*   By: yaalaoui <yaalaoui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/12 11:33:26 by yaalaoui          #+#    #+#             */
-/*   Updated: 2020/11/22 18:56:17 by yaalaoui         ###   ########.fr       */
+/*   Updated: 2020/11/26 11:38:13 by yaalaoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,10 +59,14 @@
 // int		main(void)
 // {
 // 	int		i;
+// 	int		j;
 
 // 	printf("%s : ", "ft_strcmp.s");
-// 	i = ft_strcmp("bbbbb", "abbbb");
+// 	i = ft_strcmp("a", "asdf");
 // 	printf("%d\n", i);
+// 	printf("%s : ", "strcmp.s");
+// 	j = strcmp("a", "asdf");
+// 	printf("%d\n", j);
 // }
 
 /*
@@ -102,13 +106,13 @@
 ** FT_STRDUP
 */
 
-int		main(void)
-{
-	char *str;
+// int		main(void)
+// {
+// 	char *str;
 
-	printf("%s : \n", "ft_strdup.s");
-	str = ft_strdup("");
-	printf("%s \n", str);
-	printf("len is  : %d\n", ft_strlen(str));
-	printf("sys error is  : %s\n", strerror(errno));
-}
+// 	printf("%s : \n", "ft_strdup.s");
+// 	str = ft_strdup("");
+// 	printf("%s \n", str);
+// 	printf("len is  : %d\n", ft_strlen(str));
+// 	printf("sys error is  : %s\n", strerror(errno));
+// }
