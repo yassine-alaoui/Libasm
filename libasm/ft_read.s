@@ -13,7 +13,6 @@ _ft_read:
 error:
 			push	rax
 			call	___error
-			pop		r8
-            mov     [rax], r8
+			pop		qword [rax]
             mov     rax, -1
             ret

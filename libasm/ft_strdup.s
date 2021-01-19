@@ -21,8 +21,4 @@ _ft_strdup:
 			ret
 
 error:
-			call	___error
-			pop		r8
-            mov     [rax], byte 12
-            mov     rax, -1
             ret

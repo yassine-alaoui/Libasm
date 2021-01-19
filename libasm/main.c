@@ -6,7 +6,7 @@
 /*   By: yaalaoui <yaalaoui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/12 11:33:26 by yaalaoui          #+#    #+#             */
-/*   Updated: 2020/11/26 11:38:13 by yaalaoui         ###   ########.fr       */
+/*   Updated: 2021/01/11 15:34:09 by yaalaoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,15 +24,11 @@
 
 // int		main(void)
 // {
-// 	char	str[10];
-// 	char	dst[10];
 // 	int		i;
 
-// 	dst[10] = "";
-// 	str[10] = "hello";
 // 	printf("%s : ", "ft_strlen.s");
-// 	i = ft_strlen(str);
-// 	printf("%s\n", i);
+// 	i = ft_strlen("test");
+// 	printf("%d\n", i);
 // }
 
 /*
@@ -60,12 +56,14 @@
 // {
 // 	int		i;
 // 	int		j;
+// 	char	*str1 = "btata";
+// 	char	*str2 = "msata";
 
 // 	printf("%s : ", "ft_strcmp.s");
-// 	i = ft_strcmp("a", "asdf");
+// 	i = ft_strcmp(str1, str2);
 // 	printf("%d\n", i);
 // 	printf("%s : ", "strcmp.s");
-// 	j = strcmp("a", "asdf");
+// 	j = strcmp(str1, str2);
 // 	printf("%d\n", j);
 // }
 
@@ -78,9 +76,10 @@
 // 	ssize_t	i;
 
 // 	printf("%s : \n", "ft_write.s");
-// 	i = write(12, "", 0);
+// 	i = ft_write(1, "", -1);
 // 	printf("len is  : %zd\n", i);
 // 	printf("sys error is  : %d\n", errno);
+// 	printf("sys error is  : %s\n", strerror(errno));
 // }
 
 // /*
@@ -111,8 +110,8 @@
 // 	char *str;
 
 // 	printf("%s : \n", "ft_strdup.s");
-// 	str = ft_strdup("");
+// 	str = ft_strdup("btata");
+// 	printf("sys error is  : %s\n", strerror(errno));
 // 	printf("%s \n", str);
 // 	printf("len is  : %d\n", ft_strlen(str));
-// 	printf("sys error is  : %s\n", strerror(errno));
 // }

@@ -21,7 +21,6 @@ loop:
 
 incer:
 			inc r10
-			mov rax, 0
 			jmp	loop
 
 return:
