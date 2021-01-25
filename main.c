@@ -22,14 +22,17 @@
 ** FT_STRLEN
 */
 
-// int		main(void)
-// {
-// 	int		i;
+//int		main(void)
+//{
+//	int		i;
 
-// 	printf("%s : ", "ft_strlen.s");
-// 	i = ft_strlen("test");
-// 	printf("%d\n", i);
-// }
+//	printf("%s : ", "ft_strlen.s");
+//	i = ft_strlen("test++");
+//	printf("%d\n", i);
+//	printf("%s : ", "strlen");
+//	i = strlen("test++");
+//	printf("%d\n", i);
+//}
 
 /*
 ** FT_STRCPY
@@ -37,14 +40,15 @@
 
 // int		main(void)
 // {
-// 	char	str[10];
-// 	char	dst[10];
+// 	char	str[10] = "yassine";
+// 	char	dst[10] = "";
 // 	char	*i;
 
-// 	dst[10] = "";
-// 	str[10] = "hello";
 // 	printf("%s : ", "ft_strcpy.s");
 // 	i = ft_strcpy(dst, str);
+// 	printf("%s\n", i);
+// 	printf("%s : ", "strcpy");
+// 	i = strcpy(dst, str);
 // 	printf("%s\n", i);
 // }
 
@@ -76,7 +80,7 @@
 // 	ssize_t	i;
 
 // 	printf("%s : \n", "ft_write.s");
-// 	i = ft_write(1, "", -1);
+// 	i = ft_write(1, "lol\n", 4);
 // 	printf("len is  : %zd\n", i);
 // 	printf("sys error is  : %d\n", errno);
 // 	printf("sys error is  : %s\n", strerror(errno));
@@ -92,8 +96,8 @@
 // 	int		j;
 // 	char	str[1000000];
 
-// 	printf("%s : \n", "ft_write.s");
-// 	j = open("map.cub", O_RDONLY);
+// 	printf("%s : \n", "ft_read.s");
+// 	j = open("main.c", O_RDONLY);
 // 	i = ft_read(j, str, 80);
 // 	printf("%s : \n", str);
 // 	printf("len is  : %zd\n", i);
